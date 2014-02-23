@@ -9,4 +9,6 @@
     a) if bytes are ASCII, works
     b) if bytes are non-ASCII, fails
 
-
+Futher good read:
+ https://bitbucket.org/ezio_melotti/understanding-encodings
+ http://wolfprojects.altervista.org/talks/unicode-and-python-3/
