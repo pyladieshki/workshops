@@ -1,0 +1,8 @@
+*** Use unicode when dealing with text inside the program
+*** When writing to file, always explicitly encode unicode
+*** When reading from file, always decode to unicode first
+*** Encode unicode using utf-8 (the most common encoding)
+*** When mixing unicode + bytes: a) unicode is returned if the bytes are ASCII
+				 b) error, if bytes are non-ASCII
+
+
