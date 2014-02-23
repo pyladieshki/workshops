@@ -1,4 +1,5 @@
 #-*- coding: utf-8-*-
+import codecs
 #writing to a file requires bytes
 with open ('test', 'w') as f:
         f.write('ÄÄÄÄ')
@@ -16,5 +17,18 @@ with open('test', 'r') as f:
 #with open('test', 'a+') as f:
     #f.write(u'ÅÅÅÅ')
 
+#when printing, it is not neccessary to explicitly encode
 print u'ÅÅÅÅ'.encode('utf-8')
+#-> it's okay to write like this
+print u'ÅÅÅÅ'
 
+print "printing contents of the file"
+with codecs.open('testing', 'r', 'utf-8') as f:
+    print f
+    line = f.readline()
+    print line, 'type:', type(line) 
+
+with open('testing', 'r') as f:
+    print f
+    line = f.readline()
+    print line, 'type:', type(line) 

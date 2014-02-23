@@ -16,4 +16,4 @@ print 'printing unicode type text:', unicode_type
 
 #are these equal?
 print 'some text' == u'some text'
-#equal because are made of ASCII, which is a subset of Unicode
+#equal because bytes are decoded with ascii encoding
