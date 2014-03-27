@@ -7,7 +7,8 @@ class App1:
 
     @cherrypy.expose
     def apples(self):
-	return "<html><body><h1 style='color: red; text-align: center;'>Apples! Yum :) </h1></body></html>"
+	return ("<html><body><h1 style='color: red; text-align: center;'>"
+               "Apples! Yum :) </h1></body></html>")
 
 if __name__ == '__main__':
     cherrypy.config.update({'server.socket_host': '0.0.0.0'})
