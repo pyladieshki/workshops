@@ -29,13 +29,15 @@ class Parent(object):
 class Granny(object):
     @cherrypy.expose
     def index(self):
-        '''Grandparent page handler'''
+        u'''Grandparent page handler'''
         return (u'<html><body><h1>hi, I am a'
                 u' grandparent ;)</h1></body></html>')
+if __name__ == '__main__':
+    root = Granny()
+    root.grandparent = Granny()
+    root.grandparent.parent = Parent()
+    #root.grandparent.parent.child = Kid()
+    root.grandparent.parent.child.kiddo = Kid().future
 
-root = Granny()
-root.grandparent = Granny()
-root.grandparent.parent = Parent()
-#root.grandparent.parent.child = Kid()
-root.grandparent.parent.child.kiddo = Kid().future
-cherrypy.quickstart(root)
+    cherrypy.config.update({'server.socket_host': '0.0.0.0', 'server.socket_port': 8080})
+    cherrypy.quickstart(root)
