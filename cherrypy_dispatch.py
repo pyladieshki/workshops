@@ -2,9 +2,9 @@
 import cherrypy
 
 class Kid(object):
+
     @cherrypy.expose
     def index(self):
-        u'''Child page handler'''
         return (u'<html><body><h1>Meet the child! '
                 u'</h1></body></html>')
     @cherrypy.expose
@@ -18,7 +18,6 @@ class Parent(object):
 
     @cherrypy.expose
     def index(self):
-        u'''Parent page handler'''
         return (u'<html><body><h1>hey there,'
                 u' but I am a parent!</h1></body></html>')
     @cherrypy.expose
@@ -27,11 +26,12 @@ class Parent(object):
 	            u'I am a daughter!</h1></body></html>')
     
 class Granny(object):
+
     @cherrypy.expose
     def index(self):
-        u'''Grandparent page handler'''
         return (u'<html><body><h1>hi, I am a'
                 u' grandparent ;)</h1></body></html>')
+
 if __name__ == '__main__':
     root = Granny()
     root.grandparent = Granny()
