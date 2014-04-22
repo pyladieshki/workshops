@@ -1,8 +1,6 @@
 import cherrypy
 
 def trythis():
-    print args
-    print kwargs
     return "<html><body><h1>I am a simple function</h1></body></html>"
 trythis.exposed = True
 

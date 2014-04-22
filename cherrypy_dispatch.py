@@ -18,19 +18,19 @@ class Parent(object):
 
     @cherrypy.expose
     def index(self):
-        return (u'<html><body><h1>hey there,'
-                u' but I am a parent!</h1></body></html>')
+        return (u'<html><body><h1>hey there, '
+                u'but I am a parent!</h1></body></html>')
     @cherrypy.expose
     def daughter(self):
-	    return (u'<html><body><h1>Hey, '
-	            u'I am a daughter!</h1></body></html>')
+	    return (u'<html><body><h1>Hey,'
+	            u' I am a daughter!</h1></body></html>')
     
 class Granny(object):
 
     @cherrypy.expose
     def index(self):
-        return (u'<html><body><h1>hi, I am a'
-                u' grandparent ;)</h1></body></html>')
+        return (u'<html><body><h1>hi, I am a '
+                u'grandparent ;)</h1></body></html>')
 
 if __name__ == '__main__':
     root = Granny()
