@@ -37,15 +37,6 @@ l[0] = l[0] * 2
 print l 
 print id(l)
 
-# Dictionaries are mutable too
-d = {"name": "Ada", "lastname": "Lovelace"}
-print d
-print id(d)
-d["name"] = "Grace"
-d["lastname"] = "Hopper"
-print d
-print id(d)
-
 # Tuples are immutable
 t = (1, 2, 3)
 print t
@@ -54,3 +45,11 @@ t = t + (2, 3)
 print t
 print id(t)
 
+# Dictionaries are mutable too
+d = {"name": "Ada", "lastname": "Lovelace"}
+print d
+print id(d)
+d["name"] = "Grace"
+d["lastname"] = "Hopper"
+print d
+print id(d)
