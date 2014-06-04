@@ -46,7 +46,7 @@ if __name__ == '__main__':
     obj2.print_gdp()
     try:
         obj2.in_eurozone()
-    except Exception, e:
+    except AttributeError as e:
         print "%s is not an EU country" % (obj2.name)
 
 
