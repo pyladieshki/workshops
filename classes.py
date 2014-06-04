@@ -1,4 +1,6 @@
 class Country(object):
+    """This class is meant for all countries in the world"""
+
     # class attributes
     country_num = 193
     population = 7237783400
@@ -20,6 +22,8 @@ class Country(object):
 
 
 class EUCountry(Country):
+    """"This class is meant only for EU countries"""
+
     # class attributes
     country_num = 28
     population = 504456000
