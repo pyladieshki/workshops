@@ -36,7 +36,7 @@ class EUCountry(Country):
         print "In Eurozone:", self.eurozone
 
 if __name__ == '__main__':
-    obj1 = EUCountry("Portugal", population=10609000, gdp=23068, True)
+    obj1 = EUCountry("Portugal", population=10609000, gdp=23068, eurozone=True)
     obj2 = Country("Montenegro", population=620000, gdp=11913)
     obj1.print_name()
     obj1.print_population()
