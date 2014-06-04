@@ -26,8 +26,7 @@ class CountryModified(object):
 
 class Country(object):
     # class attributes
-    country_num = 193
-    population = 7237783400
+    planet = "Earth"
 
     #initialization
     def __init__(self, name, population, gdp):
