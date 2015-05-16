@@ -5,7 +5,7 @@ class Country(object):
     planet = "Earth"
 
     #initialization
-    def __init__(self, name, population, gdp):
+    def __init__(self, name="", population=0, gdp=0):
         self.name = name
         self.population = population
         self.gdp = gdp
@@ -47,6 +47,9 @@ if __name__ == '__main__':
     obj2.print_name()
     obj2.print_population()
     obj2.print_gdp()
+    print "Population %s %d" % (obj1.name, obj1.population)
+    print EUCountry.population	
+
     try:
         obj2.in_eurozone()
     except AttributeError as e:
@@ -59,7 +62,7 @@ if __name__ == '__main__':
 
 # 2. Add one more method to EUCountry
 
-# 3. Create a new class for replacement of Country class and modify the subclassEUCountry so that it would inherit from this new class 
+# 3. Create a new class for replacement of Country class and modify the subclass EUCountry so that it would inherit from this new class 
 
 
 

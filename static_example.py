@@ -6,7 +6,7 @@
 
 import datetime
 
-class Example:
+class Example(object):
 
     @staticmethod
     def timeofday():
@@ -33,9 +33,8 @@ Example.timeofday()
 # For example, classmethods can be used for defining custom constructors.
 # Here is an example:
 
-class C:
+class C(object):
 
-    number = 0
     
     def __init__(self,arg1):
         self.number = arg1    
