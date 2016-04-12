@@ -11,7 +11,7 @@ def scrape_weather_website():
 
 # How does the weather feel right now in Helsinki?
 def temp_feels_like():
-    soup = crawl_weather_website()
+    soup = scrape_weather_website()
     temps = soup.find_all('div', class_="apparent-temperature-value")
 
     return temps
@@ -57,3 +57,4 @@ def how_will_temp_be_in_3_hours():
     """
 
     return None
+
