@@ -27,3 +27,7 @@ class TestNBit(unittest.TestCase):
 		last_bit = get_bit(rand_num, 1)
 		self.assertTrue(0<=last_bit<=1)
 		self.assertIsInstance(last_bit, int)
+
+
+if __name__ == '__main__':
+    unittest.main()
