@@ -18,12 +18,12 @@ class TestWeatherForecast(unittest.TestCase):
         temp = temp_now()
         feeling = how_does_it_feel(temp)
         self.assertIsInstance(feeling, str)
+        # if one assert fails,
+        # the rest of the asserts within same method will not be run
 
     def test_it_is_cold(self):
         feeling = how_does_it_feel(-10)
         self.assertEqual(feeling, 'Brrrr!')
-        self.assertNotEqual(feeling, 'Freaking Cold!')
-        self.assertNotEqual(feeling, 'It is freaking HOT!')
 
     # Write similar tests for temps > 10, and between 0 and 10
 

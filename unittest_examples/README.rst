@@ -26,7 +26,7 @@ How to **start** with writing **unit tests** using Python unittest module:
 
 a.  Each test must be independent from the rest (e.g., no dependency on the order of running)
 
-b.  Test one condition only!
+b.  Test smallest functionalities
 
 c.  Same results must be observed on every run
 
