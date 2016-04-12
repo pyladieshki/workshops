@@ -2,6 +2,8 @@
 import unittest
 from ex_weather_forecast.weather_forecast import temp_now, how_does_it_feel
 
+# NOTE: all assert methods can be found here:
+# https://docs.python.org/3.5/library/unittest.html#assert-methods
 
 class TestWeatherForecast(unittest.TestCase):
 
@@ -12,7 +14,7 @@ class TestWeatherForecast(unittest.TestCase):
         temp = temp_now()
         self.assertIsInstance(temp, int)
 
-    def test_feeling_str(self):
+    def test_feeling_is_str(self):
         temp = temp_now()
         feeling = how_does_it_feel(temp)
         self.assertIsInstance(feeling, str)
