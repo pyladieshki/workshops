@@ -1,5 +1,6 @@
+----------------------
 Why writing **tests**?
-
+----------------------
 1.  The code **works** if the tests **pass**. No need to overthink -> savings of time & effort
 
 2.  Visual feedback - we all like to see results
@@ -9,8 +10,9 @@ Why writing **tests**?
 4.  Last, but not least - they save you potentially from *hours of debugging*!
     Common WRONG assumption: writing tests requires a lot of time and effort. In the long run they DO save you time!
 
-
+--------------------------------------------------------------------------
 How to **start** with writing **unit tests** using Python unittest module:
+--------------------------------------------------------------------------
 
 - import unittest
 - write a class, which inherits from unittest.TestClass
@@ -18,8 +20,9 @@ How to **start** with writing **unit tests** using Python unittest module:
 - run the tests by python3 -m unittest (run in the parent dir of the module)
   OR python3 -m unittest test_module.TestClassName.test_method
 
-
+----------------------------------------
 **Best practices** to running unit tests
+----------------------------------------
 
 a.  Each test must be independent from the rest (e.g., no dependency on the order of running)
 
