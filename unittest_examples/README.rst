@@ -10,12 +10,12 @@ Why writing **tests**?
     Common WRONG assumption: writing tests requires a lot of time and effort. In the long run they DO save you time!
 
 
-How to start with writing tests using Python unittest module:
+How to **start** with writing **unit tests** using Python unittest module:
 
-+ import unittest
-+ write a class, which inherits from unittest.TestClass
-+ write methods inside the class, which each test one single operation, functionality, etc.
-+ run the tests by python3 -m unittest (run in the parent dir of the module)
+- import unittest
+- write a class, which inherits from unittest.TestClass
+- write methods inside the class, which each test one single operation, functionality, etc.
+- run the tests by python3 -m unittest (run in the parent dir of the module)
   OR python3 -m unittest test_module.TestClassName.test_method
 
 
